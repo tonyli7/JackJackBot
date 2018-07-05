@@ -3,12 +3,15 @@ var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 
+
+console.log("hello")
+
 function respond() {
 
     var d = new Date();
     if (d.getDay() == 4){ //Thursday
 	if (d.getHours() == 17){
-	    
+	    console.log("its thursday")
 	    postMessage();
 	}
     }
