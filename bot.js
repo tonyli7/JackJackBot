@@ -7,7 +7,7 @@ function respond() {
 
     var d = new Date();
     if (d.getDay() == 4){ //Thursday
-	if (d.getHours() == 5 && d.getMinutes() == 35){
+	if (d.getHours() == 5 && d.getMinutes() == 40){
 	    postMessage();
 	}
     }
