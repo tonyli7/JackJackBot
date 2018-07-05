@@ -11,8 +11,10 @@ function respond() {
     var d = new Date();
     if (d.getDay() == 4){ //Thursday
 	if (d.getHours() == 17){
-	    console.log("its thursday")
+	    console.log("its thursday");
+	    this.res.writeHead(200);
 	    postMessage();
+	    this.res.end();
 	}
     }
     
