@@ -4,6 +4,15 @@ var cool = require('cool-ascii-faces');
 var botID = process.env.BOT_ID;
 
 function respond() {
+
+    var d = new Date();
+    if (d.getDay() == 4){ //Thursday
+	if (d.getHours() == 5 && d.getMinutes() == 35){
+	    postMessage();
+	}
+    }
+    
+    /*
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy$/;
 
@@ -16,13 +25,14 @@ function respond() {
     this.res.writeHead(200);
     this.res.end();
   }
+    */
 }
 
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = cool();
-
+  //botResponse = cool();
+    botResponse = "Punch in."
   options = {
     hostname: 'api.groupme.com',
     path: '/v3/bots/post',
